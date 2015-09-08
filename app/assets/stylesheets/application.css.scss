@@ -38,6 +38,10 @@ body {
 	clear: both;
 }
 
+.hidden {
+	display: none;
+}
+
 h1, h2, h3, h4, h5, h6, p, ul, ol, li {
 	color: $dark;
 }
@@ -145,7 +149,7 @@ input[type="text"], input[type="email"], input[type="password"], textarea {
 	max-width: 100%;
 	height: 3em;
 	border: 2px solid $border;
-	padding: 1em;
+	padding: 0 1em;
 	margin: .5em 0 2em 0;
 }
 
