@@ -42,6 +42,12 @@ body {
 	display: none;
 }
 
+.alert, .notice {
+	text-align: center;
+	padding: 1em 0;
+	border-bottom: 1px solid $border;
+}
+
 h1, h2, h3, h4, h5, h6, p, ul, ol, li {
 	color: $dark;
 }
