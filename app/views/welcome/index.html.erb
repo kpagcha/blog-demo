@@ -1,0 +1,29 @@
+<div class="wrapper wrapper_padding clearfix">
+		<div class="col-1 about homepage_content">
+			<h2>About</h2>
+			<hr>
+			<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ut odio sem. Etiam aliquam dictum erat, quis mollis justo accumsan ut. Vestibulum tristique, odio id molestie laoreet, est lacus pretium ex, et consectetur magna nisi sit amet massa. Sed consequat dui sed urna pulvinar, <a href="#">molestie</a> hendrerit libero laoreet.</p>
+			<p>Nullam non libero quis magna molestie imperdiet. Curabitur suscipit lectus sit amet feugiat placerat. Ut in felis non massa eleifend ultricies a quis metus.</p>
+			<p>Nam diam orci, tincidunt cursus blandit quis, dictum nec sapien. Quisque pharetra semper diam sit amet feugiat. Duis arcu mauris, pharetra sit amet ligula sit amet, tincidunt dignissim augue.</p>
+		</div>
+		<div class="col-2 homepage_content">
+			<h2>Stuff I've written</h2>
+			<hr>
+
+			<% @posts.each do |post| %>
+				<h3><%= link_to post.title, post_path(post) %></h3>
+				<p class="date"><%= post.created_at.strftime("%A, %b %d")%></p>
+				<% end %>
+		</div>
+		<div class="col-3 homepage_content">
+			<h2>Stuff I've built</h2>
+			<hr>
+			<h3><a href="#">The DO list</a></h3>
+			<p class="date">Photogram</p>
+			<h3><a href="#">How do I learn "X"?</a></h3>
+			<p class="date">My Chat</p>
+			<h3><a href="#">Strive for the uncomfortable</a></h3>
+			<p class="date">eShop</p>
+		</div>
+	</div>
+</div>
